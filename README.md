@@ -53,6 +53,6 @@ Admin: Access admin dashboard, manage payroll, attendance, etc.
 
 Employee: View attendance, payslips, documents.
 
-📬 Contact
+📬 Contacts
 Email: harsh12meena@gmail.com
 LinkedIn: https://www.linkedin.com/in/harsh-meena-aa3715252/
