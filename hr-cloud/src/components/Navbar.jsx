@@ -1,4 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
+import React from "react";
 import { useAuth } from '../context/AuthContext';
 import logo from '../assets/logo.png'; // Adjust path if your logo is stored elsewhere
 

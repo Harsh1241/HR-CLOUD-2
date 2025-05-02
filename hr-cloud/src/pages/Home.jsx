@@ -2,6 +2,7 @@ import { FaUserTie, FaClock, FaMoneyBillWave, FaChartLine } from 'react-icons/fa
 import 'aos/dist/aos.css';
 import AOS from 'aos';
 import { useEffect } from 'react';
+import React from "react";
 
 const Home = () => {
   useEffect(() => {
