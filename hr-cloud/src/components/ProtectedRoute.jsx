@@ -1,24 +1,18 @@
+import React from 'react';
 import { Navigate } from 'react-router-dom';
-import { useAuth } from '../context/AuthContext';
 
-/**
- * @param {ReactNode} children – the component to render
- * @param {string[]} roles – allowed roles: e.g. ['admin'], ['employee'], or ['admin','employee']
- */
 const ProtectedRoute = ({ children, roles }) => {
-  const { user } = useAuth();
+  const token = localStorage.getItem('token');
+  const role = localStorage.getItem('role');
 
-  if (!user) {
-    // Not logged in → redirect to login
+  if (!token) {
     return <Navigate to="/login" replace />;
   }
 
-  if (!roles.includes(user.role)) {
-    // Logged in but wrong role → redirect to unauthorized page or home
+  if (!roles.includes(role)) {
     return <Navigate to="/unauthorized" replace />;
   }
 
-  // Authorized
   return children;
 };
 

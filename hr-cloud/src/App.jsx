@@ -22,7 +22,6 @@ function App() {
         <main className="flex-grow">
           <Routes>
             {/* Public */}
-            <Route path="/login" element={<Login />} />
             <Route path="/unauthorized" element={<Unauthorized />} />
 
             {/* Shared pages */}
