@@ -35,6 +35,13 @@ npm install
 3. Start Development Server:
 npm run dev
 
+4. ADMIN LOGIN CREDENTIALS
+email    - admin@example.com
+password - admin123
+
+5. EMPLOYEE LOGIN CREDENTIALS
+email    - employee@example.com
+password - emp123
 
 🌐 Tech Stack
 React + Vite
